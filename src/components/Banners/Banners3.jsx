@@ -1,13 +1,14 @@
 import React from 'react'
-import banner from "../../assets/fruits/banner.png";
-import { motion, spring } from 'framer-motion';
-import { FadeUp } from '../../utility/Animation';
+import banner from "../../assets/fruits/baby.jpg"
+import { motion } from 'framer-motion'
+import { FadeLeft } from '../../utility/Animation'
 
-const Banners = () => {
+
+const Banners3 = () => {
     return (
-        <section className=' bg-secondary/20 rounded-3xl'>
-            <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
-                {/* Banner Image */}
+        <section className=' bg-slate-300 rounded-3xl mb-5 '>
+            <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14 rounded-3xl">
+                {/*Image */}
 
                 <div className='flex justify-center items-center '>
                     <motion.img
@@ -25,11 +26,11 @@ const Banners = () => {
 
                         className='text-center md:text-left space-y-4 lg:max-[400px]'>
                         <motion.h1
-                            variants={FadeUp(0.5)}
+                            variants={FadeLeft(0.5)}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className='text-3xl lg:text-6xl font-bold uppercase'>Brand Info </ motion.h1>
+                            className='text-3xl lg:text-6xl font-bold uppercase'>get fresh fruits today </ motion.h1>
 
 
                         <p>
@@ -48,14 +49,17 @@ const Banners = () => {
 
                         {/* Button  Section  */}
                         <motion.div
-                            variants={FadeUp(1.1)}
+                            variants={FadeLeft(1.1)}
                             initial="hidden"
                             animate="visible"
                             className='flex justify-center md:justify-start relative'>
 
-                            <button className='primary-btn ' >
 
-                                Learn More
+                            <button className='primary-btn ' >
+                                
+
+                                Order Now
+
                             </button>
                         </motion.div>
 
@@ -66,4 +70,4 @@ const Banners = () => {
     )
 }
 
-export default Banners;
+export default Banners3

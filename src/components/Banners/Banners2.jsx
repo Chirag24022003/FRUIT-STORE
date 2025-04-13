@@ -1,23 +1,13 @@
 import React from 'react'
-import banner2 from "../../assets/fruits/banner.png";
+import banner2 from "../../assets/fruits/Banner2.jpg";
 import { motion, spring } from 'framer-motion';
 import { FadeUp } from '../../utility/Animation';
 
 const Banners2 = () => {
     return (
-        <section className=' bg-secondary/20 rounded-3xl'>
-            <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
-                {/* Banner Image */}
-
-                <div className='flex justify-center items-center '>
-                    <motion.img
-
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
-                        viewport={{ once: true }}
-                        src={banner} alt="" className='w-[500px] md:max-[500px] h-full object-fill' />
-                </div>
+        <section >
+            <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14 md:py-24">
+               
 
                 {/* Brand Info */}
                 <div className='flex flex-col justify-center'>
@@ -29,7 +19,7 @@ const Banners2 = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className='text-3xl lg:text-6xl font-bold uppercase'>Brand Info </ motion.h1>
+                            className='text-3xl lg:text-6xl font-bold uppercase'>online fruit store </ motion.h1>
 
 
                         <p>
@@ -60,6 +50,17 @@ const Banners2 = () => {
                         </motion.div>
 
                     </div>
+                </div>
+                 {/* Banner Image */}
+
+                 <div className='flex justify-center items-center '>
+                    <motion.img
+
+                        initial={{ opacity: 0,x:200, rotate:75 }}
+                        whileInView={{ opacity: 1,x:0, rotate:0}}
+                        transition={{ duratrion:1, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        src={banner2} alt="" className='w-[500px] md:max-[500px] h-full object-fill drop-shadow' />
                 </div>
             </div>
         </section>

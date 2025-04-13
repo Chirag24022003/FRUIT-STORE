@@ -43,7 +43,7 @@ const Navbar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='container flex justify-between items-center py-4 md:pt-4 bg-black'
+          className='container w-full flex justify-between items-center py-4 md:pt-4  bg-black'
         >
           {/* Logo */}
           <div className='text-2xl flex items-center gap-2 font-bold uppercase'>
@@ -54,12 +54,12 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className='hidden md:block'>
-            <ul className='flex items-center gap-5 text-white'>
+            <ul className='flex items-center gap-5 text-white  '>
               {['Home', 'About', 'Product', 'Shop', 'Contact'].map((label, idx) => {
                 const path = ['/', '/Banners', '/Banners2', '/Banners3', '/Contact'][idx];
                 return (
                   <li key={label}>
-                    <Link to={path} className='focus:text-[#d1fa02] hover:text-primary duration-200'>
+                    <Link to={path} className=' hover:text-primary duration-200'>
                       {label}
                     </Link>
                   </li>

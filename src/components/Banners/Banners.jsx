@@ -5,7 +5,7 @@ import { FadeUp } from '../../utility/Animation';
 
 const Banners = () => {
     return (
-        <section className=' bg-secondary/20 rounded-3xl'>
+        <section className=' bg-secondary/20 rounded-3xl '>
             <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
                 {/* Banner Image */}
 
@@ -23,7 +23,7 @@ const Banners = () => {
                 <div className='flex flex-col justify-center'>
                     <div
 
-                        className='text-center md:text-left space-y-4 lg:max-[400px]'>
+                        className='text-center md:text-left space-y-4 lg:max-[400px] '>
                         <motion.h1
                             variants={FadeUp(0.5)}
                             initial="hidden"
